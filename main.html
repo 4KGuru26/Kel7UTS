@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kelompok 7</title>
+        <h1 class="mb-3">Don't Take Spike's Bones</h1>
+        <style type="text/css">
+            h1{
+                color: steelblue;
+                font-family: fantasy;
+                text-shadow: 2px 2px 2px black;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    <body style="background-color:cornsilk">
+        <div class ="container">
+            <hr/>
+            <div id = "main">
+                <div id = "gambar">
+                    <img width = "250px" src="DOG.jpg" class="img-fluid mx-auto d-block rounded-circle" />
+                </div>
+
+                <hr/>
+                <!--input peserta-->
+                <div id = "inputPeserta">
+                    <div id = "button">
+                        <h1>- Player -</h1>
+                        <form action="next.html">
+                            <input name="fname" class="form-control text-center mb-4" type="text" id="inputVal" placeholder="Username" required>
+                                <div id="btnGetVal">
+                                    <button class='btn btn-outline-success' type="submit" onclick="isiForm()"><b>Play</b></button>
+                                </div>
+                        </form>
+                        <br>
+                            <div id="add" onSubmit="exportToJSON()">
+                                <button class='btn btn-outline-primary'><b>Add Player</b></button>
+                            </div>
+                            <br>
+                            <h4 class="mb-3 text-center"><b>List Player: </b></h4>
+                            <div id="ortu" class="text-center"></div>
+                        
+                          <!-- <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                            Name: <input type="text" name="fname">
+                            <input type="submit" value="Submit">
+                            </form> -->
+                        <!-- <h4 class="mb-3"><b>List Player: </b></h4>
+                        <div id="ortu"></div> -->
+                        <!-- <div id="showVal"> -->
+                            <!-- <h1> Get Value From Input</h1> -->
+                            <!-- <input type="text" id="inputVal">
+                            <button id="btnGetVal">Add Player</button>
+                            <div id="showVal"></div> -->
+                            <!-- <h1>Add Children</h1> -->
+                            <!-- <button id="btnMelahirkan">Melahirkan</button> -->
+                            
+                        <!-- <span onclick="newElement()" id="btnGetVal"><b>Player List:</b></span> -->
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>    
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <script>
+
+                let a = 0;
+                    function isiForm(){
+                        let x = document.getElementById("inputVal").value;
+                        let text;
+                        if(x == ""){
+                            alert("Anda belum memasukkan nama player!");
+                        }
+                        // if(a>0){
+                        //     window.location.href = "next.html";
+                        // }
+                    }
+                        
+            </script> 
+            
+            <script>
+                $("#add").click(function(){
+                            val = $("#inputVal").val();
+                            $("#showVal").text(val);
+                            });
+
+                            $("#add").click(function(){
+                            val = $("#inputVal").val();
+                            $("#ortu").append("<li>" + val);
+                            });
+            </script>
+
+            <script>
+                function exportToJSON() {
+                const userQuestion = document.getElementById("add").value;
+                const userAnswer = document.getElementById("btnGetvalue").value;
+  
+                const data = {
+                    questions: 
+                    {
+                        add: userQuestion,
+                        btnGetValue: userAnswer
+                    }
+                };
+
+                // const a = document.createElement("a");
+                // a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, ' ')], {
+                //     type: "text/plain"
+                // }));
+                a.setAttribute("input", "data.json");
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                }
+            </script>
+    </body>
+</html>

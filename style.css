@@ -1,0 +1,106 @@
+@media (min-width: 1200px){
+    .container{
+        max-width: 970px;
+    }
+}
+
+#button{
+    justify-content: center;
+}
+
+#add{
+    padding-left: 90px;
+}
+
+/* #btnGetVal{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#add{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+} */
+
+#countdown{
+    color:#e99;
+    font-size: 250%;
+    font-weight: bold;
+  }
+
+#komponen{
+    display: flex;
+    justify-content : space-between;
+}
+
+#pemain{
+    font-size: 20px;
+}
+
+#tulang{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#foto{
+    display: flex;
+    justify-content: space-around;
+}
+
+#tulang4{
+    justify-content: space-around;
+}
+
+#buttonFinal{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#tunjuk{
+    margin-top: -350px;
+    margin-bottom: 350px;
+}
+
+#countdown-container {
+    display: inline-block; 
+    width: 270px; 
+    margin: 5px;
+    border-radius: 5px; 
+}
+
+#countdown {
+    font-family: "Fira Sans", sans-serif; 
+    display: inline-block; 
+    padding: 10px; 
+    background: skyblue;
+    color: white; 
+}
+
+#countdown span {
+    font-weight: bold; 
+    font-size: 30px; 
+}
+
+#awake {
+    margin: 24px;
+    width: 200px;
+    height: 200px;
+    animation: zoom-in-zoom-out 2s ease-out infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }

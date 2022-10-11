@@ -1,0 +1,495 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kelompok 7</title>
+        <link rel="stylesheet" href="style.css"/>
+        <style type="text/css">
+            h1{
+                color: steelblue;
+                font-family: fantasy;
+                text-shadow: 2px 2px 2px black;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+            h2{
+                color: steelblue;
+                font-family: fantasy;
+                text-shadow: 2px 2px 2px black;
+                text-align: center;
+                font-size: 30px;
+                margin-top: 30px;
+            }
+        </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    </head>
+    
+    <body style="background-color:cornsilk">
+        
+        <div class="container">
+            <div id="bungkus"> 
+                <h1 class="mb-3">Don't Take Spike's Bones</h1>
+                <div>
+                    <img width="250px" src="DOG.jpg" class="img-fluid mx-auto d-block rounded-circle"/>
+                </div>
+                <div id="tunjuk">
+                    <button class="btn btn-outline-primary">
+                        <a href="main.html">
+                            <img src="image\hand-point-right-solid-removebg-preview.png" width="40px"/>Back</a> 
+                    </button>
+                </div>
+                <hr/>
+
+                <div id="komponen" start_timer()>
+                    <div id="countdown-container">
+                        <div id="countdown">
+                            <span id="minutes">0m</span> : <span id="seconds">0s</span>
+                        </div>
+                    </div>
+
+                    <!--MUSIC-->
+                    <audio id="theme" hidden src="audio/C418 - Dog.mp3" type="audio/mp3"></audio>
+                    <audio id="pecah" src="audio/Bone-crack-sfx.mp3"></audio>
+                    <audio id='mySound' src='audio/Heart-beat-sfx.mp3'></audio>
+
+                    <button id="playTheme">
+                        <input type="image" src="image/pause.png" width="48" height="48"/>
+                    </button>
+                </div>
+
+                <div id="tulang" class="mt-5 mr-3">
+                    <button id="btnHide1" class="btn btn-outline-primary" onclick="play()">
+                        <img src="image/bone.png" id="hideShowMsg" width="75px"onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a> 
+                        <script>
+                            function PlaySound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.play();
+                                    }
+    
+                                    function StopSound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.pause();
+                                        thissound.currentTime = 0;
+                                    }
+                            </script>
+                    </button>
+                    <button id="btnHide2" class="btn btn-outline-primary" onclick="play()">
+                        <img src="image/bone.png" id="hideShowMsg2" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a>
+                        <script>
+                            function PlaySound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.play();
+                                    }
+    
+                                    function StopSound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.pause();
+                                        thissound.currentTime = 0;
+                                    }
+                            </script> 
+                    </button>
+                    <button id="btnHide3" class="btn btn-outline-primary" onclick="play()">
+                        <img src="image/bone.png" id="hideShowMsg3" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a> 
+                        <script>
+                        function PlaySound(soundobj) {
+                                    var thissound=document.getElementById(soundobj);
+                                    thissound.play();
+                                }
+
+                                function StopSound(soundobj) {
+                                    var thissound=document.getElementById(soundobj);
+                                    thissound.pause();
+                                    thissound.currentTime = 0;
+                                }
+                        </script>
+                    </button>
+                    <button id="btnHide4" class="btn btn-outline-primary" onclick="play()">
+                        <img src="image/bone.png" id="hideShowMsg4" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a>
+                        <script>
+                            function PlaySound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.play();
+                                    }
+    
+                                    function StopSound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.pause();
+                                        thissound.currentTime = 0;
+                                    }
+                            </script>
+                    </button>
+                </div>
+                <div id="foto" class="mt-5">
+                    <div id="tulang2" class="d-grid mb-3">
+                        <button id="btnHide5" class="btn btn-outline-primary" onclick="play()">
+                            <img src="image/bone.png" id="hideShowMsg5" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a> 
+                            <script>
+                                function PlaySound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.play();
+                                        }
+        
+                                        function StopSound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.pause();
+                                            thissound.currentTime = 0;
+                                        }
+                                </script>
+                        </button>
+
+                        <button id="btnHide6" class="btn btn-outline-primary" onclick="play()">
+                            <img src="image/bone.png" id="hideShowMsg6" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a> 
+                            <script>
+                                function PlaySound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.play();
+                                        }
+        
+                                        function StopSound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.pause();
+                                            thissound.currentTime = 0;
+                                        }
+                                </script>
+                        </button>
+
+                        <button id="btnHide7" class="btn btn-outline-primary" onclick="play()">
+                            <img src="image/bone.png" id="hideShowMsg7" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a> 
+                            <script>
+                                function PlaySound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.play();
+                                        }
+        
+                                        function StopSound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.pause();
+                                            thissound.currentTime = 0;
+                                        }
+                                </script>
+                        </button>
+                        <!--on click-->
+                        <button id="btnHide8" class="btn btn-outline-primary" onclick="changeSrc()" onclick="play()">
+                            <a href="halaman.html"> <img src="image/bone.png" id="hideShowMsg8" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a> 
+                            <script>
+                                function PlaySound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.play();
+                                        }
+        
+                                        function StopSound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.pause();
+                                            thissound.currentTime = 0;
+                                        }
+                                </script>
+                        </button>
+
+                    </div>
+
+                    <img id="sleep" width = "300px" src="image/dog-sleep.png" class="img-fluid mx-auto d-block mt-5"/>
+                    
+                    <script>
+                        function changeSrc(){
+                        const img = document.getElementById("sleep");
+                        img.src = "image/dog-awake.png";
+                        }
+                    </script>
+
+                    <div id="tulang3" class="d-grid" >
+                        <button id="btnHide9" class="btn btn-outline-primary" onclick="play()">
+                            <img src="image/bone.png" id="hideShowMsg9" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a>
+                            <script>
+                                function PlaySound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.play();
+                                        }
+        
+                                        function StopSound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.pause();
+                                            thissound.currentTime = 0;
+                                        }
+                                </script> 
+                        </button>
+                        <button id="btnHide10" class="btn btn-outline-primary" onclick="play()">
+                            <img src="image/bone.png" id="hideShowMsg10" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a>
+                            <script>
+                                function PlaySound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.play();
+                                        }
+        
+                                        function StopSound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.pause();
+                                            thissound.currentTime = 0;
+                                        }
+                                </script> 
+                        </button>
+                        <button id="btnHide11" class="btn btn-outline-primary" onclick="play()">
+                            <img src="image/bone.png" id="hideShowMsg11" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a> 
+                            <script>
+                                function PlaySound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.play();
+                                        }
+        
+                                        function StopSound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.pause();
+                                            thissound.currentTime = 0;
+                                        }
+                                </script>
+                        </button>
+                        <button id="btnHide12" class="btn btn-outline-primary" onclick="play()">
+                            <img src="image/bone.png" id="hideShowMsg12" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a>
+                            <script>
+                                function PlaySound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.play();
+                                        }
+        
+                                        function StopSound(soundobj) {
+                                            var thissound=document.getElementById(soundobj);
+                                            thissound.pause();
+                                            thissound.currentTime = 0;
+                                        }
+                                </script> 
+                        </button>
+                    </div>
+                </div>
+                <div id="tulang4" class="mt-5 d-flex">
+                    <button id="btnHide13" class="btn btn-outline-primary" onclick="play()">
+                        <img src="image/bone.png" id="hideShowMsg13" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a> 
+                        <script>
+                            function PlaySound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.play();
+                                    }
+    
+                                    function StopSound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.pause();
+                                        thissound.currentTime = 0;
+                                    }
+                            </script>
+                    </button>
+                    <button id="btnHide14" class="btn btn-outline-primary" onclick="play()">
+                        <img src="image/bone.png" id="hideShowMsg14" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a> 
+                        <script>
+                            function PlaySound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.play();
+                                    }
+    
+                                    function StopSound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.pause();
+                                        thissound.currentTime = 0;
+                                    }
+                            </script>
+                    </button>
+                    <button id="btnHide15" class="btn btn-outline-primary" onclick="play()">
+                        <img src="image/bone.png" id="hideShowMsg15" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a>
+                        <script>
+                            function PlaySound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.play();
+                                    }
+    
+                                    function StopSound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.pause();
+                                        thissound.currentTime = 0;
+                                    }
+                            </script> 
+                    </button>
+                    <button id="btnHide16" class="btn btn-outline-primary" onclick="play()">
+                        <img src="image/bone.png" id="hideShowMsg16" width="75px" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')"/></a> 
+                        <script>
+                            function PlaySound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.play();
+                                    }
+    
+                                    function StopSound(soundobj) {
+                                        var thissound=document.getElementById(soundobj);
+                                        thissound.pause();
+                                        thissound.currentTime = 0;
+                                    }
+                            </script>
+                    </button>
+                </div>      
+                <div id="footer" class="mt-5">
+                    <h2>Steal Spike's Bones, but don't wake him up!</h2>
+                </div> 
+                <script>
+                     function myFunction(){
+                        document.getElementById("footer").innerHTML = "<h2>Oh no! You wake him up!!!!</h2>";
+                    }
+                </script>
+                </br>      
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <!--BUTTON FADE WHEN PRESS THE BONE-->
+        <script type="text/javascript">
+            $("#btnHide1").click(function(){
+                $("#hideShowMsg").fadeOut();
+            });
+            $("#btnHide2").click(function(){
+               $("#hideShowMsg2").fadeOut();
+            });
+            $("#btnHide3").click(function(){
+                $("#hideShowMsg3").fadeOut();
+            });
+            $("#btnHide4").click(function(){
+                $("#hideShowMsg4").fadeOut();
+            });
+            $("#btnHide5").click(function(){
+                $("#hideShowMsg5").fadeOut();
+            });
+            $("#btnHide6").click(function(){
+                $("#hideShowMsg6").fadeOut();
+            });
+            $("#btnHide7").click(function(){
+                $("#hideShowMsg7").fadeOut();
+            });
+            $("#btnHide8").click(function(){
+                $("#hideShowMsg8").fadeOut();
+            });
+            $("#btnHide9").click(function(){
+                $("#hideShowMsg9").fadeOut();
+            });
+            $("#btnHide10").click(function(){
+                $("#hideShowMsg10").fadeOut();
+            });
+            $("#btnHide11").click(function(){
+                $("#hideShowMsg11").fadeOut();
+            });
+            $("#btnHide12").click(function(){
+                $("#hideShowMsg12").fadeOut();
+            });
+            $("#btnHide13").click(function(){
+                $("#hideShowMsg13").fadeOut();
+            });
+            $("#btnHide14").click(function(){
+                $("#hideShowMsg14").fadeOut();
+            });
+            $("#btnHide15").click(function(){
+                $("#hideShowMsg15").fadeOut();
+            });
+            $("#btnHide16").click(function(){
+                $("#hideShowMsg16").fadeOut();
+            });
+        </script>        
+
+        <script type="text/javascript">
+            const resetBtn = document.querySelector("#btnHide2");
+            counter.innerHTML = 0; 
+            let interval; 
+            let i = 0; 
+            resetBtn.addEventListener("click", resetCounter);
+            function resetCounter(){ 
+            clearInterval(interval); 
+            i = 0; 
+            counter.innerHTML = i; 
+            } 
+        </script>
+
+        <!--BUTTON 14 TO LOSE-->>
+        <script type="text/javascript">
+            if(document.getElementById("btnHide14")){
+                img.src = "image/dog-awake.png";
+            }
+        </script>
+
+        <!--AUDIO PLAY-->
+        <script type="text/javascript">
+            document.getElementById("playTheme").addEventListener("click", function(){
+                var audio = document.getElementById('theme');
+                audio.volume = 0.2;
+
+                if(this.className == 'is-playing'){
+                    this.className = "";
+                    this.innerHTML = "<img src=image/pause.png width=48px height=48px>";
+                    audio.pause();
+                }else{
+                    this.className = "is-playing";
+                    this.innerHTML = "<img src=image/play-button.png width=48px height=48px>";
+                    audio.play();
+                }
+            });
+        </script>
+
+        <!--button 1-->
+        <script>
+            function play(){
+                var boneCrack = document.getElementById("pecah");
+                boneCrack.play();
+            }
+        </script>
+
+        <!--Player Turn-->
+        <script type="text/javascript">
+             document.getElementById("pemain").innerHTML = i;
+             for(i=1; i<5; i++){
+                 document.write("Turns Player " +i);
+                 document.write("<br/>");
+             }
+        </script>
+
+        <script>
+        // COUNTDOWN
+        //    let hours = 0; 
+           let minutes = 1; 
+           let seconds = 0; 
+   
+           // converts all to seconds
+           let totalSeconds =
+          minutes * 60 + seconds;
+   
+           //temporary seconds holder
+           let tempSeconds = totalSeconds;
+   
+           // calculates number of days, hours, minutes and seconds from a given number of seconds
+           const convert = (value, inSeconds) => {
+           if (value > inSeconds) {
+               let x = value % inSeconds;
+               tempSeconds = x;
+               return (value - x) / inSeconds;
+           } else {
+               return 0;
+           }
+           };
+   
+           //sets seconds
+           const setSeconds = (s) => {
+           document.querySelector("#seconds").textContent = s + "s";
+           };
+   
+           //sets minutes
+           const setMinutes = (m) => {
+           document.querySelector("#minutes").textContent = m + "m";
+           };
+   
+           // Update the count down every 1 second
+           var x = setInterval(() => {
+           //clears countdown when all seconds are counted
+           if (totalSeconds <= 0) {
+               clearInterval(x);
+           }
+           setMinutes(convert(tempSeconds, 60));
+           setSeconds(tempSeconds == 60 ? 59 : tempSeconds);
+           totalSeconds--;
+           tempSeconds = totalSeconds;
+           }, 1000); 
+       
+        </script>
+
+    </body>
+</html>    
